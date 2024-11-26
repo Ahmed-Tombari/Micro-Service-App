@@ -1,21 +1,54 @@
-# Micro-Service-App
-- création et de déploiement de plusieurs microservices dans une architecture basée sur Spring. Voici un résumé des étapes :
+# Architecture Microservices avec Spring Cloud
+Ce projet illustre la création et le déploiement de plusieurs microservices dans une architecture basée sur # Spring Cloud.
 
-1. *Microservice Customer-service* : Création de l'entité Customer et de l'interface CustomerRepository avec Spring Data, suivi du déploiement de l'API Restful et des tests.
+# Fonctionnalités et étapes principales
 
-2. *Microservice Inventory-service* : Création de l'entité Product et de l'interface ProductRepository, déploiement de l'API Restful et tests.
+# 1. Customer-Service
+Création de l'entité Customer et de l'interface CustomerRepository avec Spring Data.
+Développement de l'API RESTful.
+Tests fonctionnels.
+# 2. Inventory-Service
+Création de l'entité Product et de l'interface ProductRepository.
+Développement de l'API RESTful.
+Tests fonctionnels.
+# 3. Gateway Service
+Mise en place d'un service de passerelle avec Spring Cloud Gateway.
+Tests avec une configuration statique via application.yml, puis en utilisant une configuration Java.
+# 4. Registry Service
+Mise en place d'un annuaire à l'aide de Netflix Eureka pour la découverte des services.
+5. Proxy Dynamique
+Implémentation d'un proxy dynamique permettant de gérer les routes des microservices enregistrés dans Eureka.
+# 6. Billing-Service
+Création d'un service de facturation (Billing-Service) utilisant Open Feign pour interagir avec Customer-Service et Inventory-Service.
+# 7. Service de Configuration
+Développement d'un microservice dédié à la centralisation et la gestion des configurations.
 
-3. *Gateway Service* : Création d'un service de passerelle avec Spring Cloud Gateway, en testant d'abord avec une configuration statique via un fichier application.yml, puis avec une configuration Java.
+# Architecture des Microservices avec Spring Cloud Gateway
+![Architecture gateway](https://github.com/user-attachments/assets/ff036158-5459-461e-8f16-1549c5453d92)
+# Modèle de base de données
+![database entites](https://github.com/user-attachments/assets/549daf4c-60d9-4f92-8092-571ac317086d)
 
-4. *Registry Service* : Mise en place d'un annuaire avec le serveur Netflix Eureka.
+# Stack Technique Utilisée
+Backend : Spring Boot, Spring Cloud (Gateway, Config Server, Eureka), Spring Data JPA, Open Feign.
+Base de données : MySQL.
+Communication interservices : REST API, Open Feign.
+Outils de développement : IntelliJ IDEA, Maven.
+Gestion des configurations : Spring Cloud Config Server.
+Découverte des services : Netflix Eureka.
 
-5. *Proxy dynamique* : Test du proxy avec une gestion dynamique des routes vers les microservices enregistrés sur Eureka.
+# Comment Exécuter le Projet
+Cloner le dépôt :
 
-6. *Billing-Service* : Création d'un service de facturation utilisant Open Feign pour interagir avec les services Customer-service et Inventory-service.
+git clone https://github.com/username/repo.git
+Configurer la base de données :
+Mettre à jour les propriétés de la base de données dans le fichier application.yml.
 
-7. *Service de configuration* : Création d'un service dédié à la configuration.
+Démarrer les services :
+Lancer chaque service individuellement depuis un IDE ou via Maven :
 
-MicroServiceApp
-![database entites](https://github.com/user-attachments/assets/f64cca0b-dae8-4c27-a721-5f4d43ec099c)
-![Architecture gateway](https://github.com/user-attachments/assets/3102ab70-390a-4de8-adca-f6d777baf6f3)
+mvn spring-boot:run
+Tester les endpoints :
+Utilisez Postman ou Swagger UI pour interagir avec les services.
+
+
 
