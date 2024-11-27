@@ -36,7 +36,8 @@ Ce projet illustre la création et le déploiement de plusieurs microservices da
 
 ## **Architecture des Microservices avec Spring Cloud Gateway**
 
-![Architecture gateway](https://github.com/user-attachments/assets/392ecefb-4fd7-485b-8065-14605ef9a136)
+![gateway architecture](https://github.com/user-attachments/assets/1128ab6f-1a37-4086-8774-a4c2ba4e3e91)
+
 
 ---
 
@@ -49,7 +50,7 @@ Ce projet illustre la création et le déploiement de plusieurs microservices da
 ## **Stack Technique Utilisée**
 
 - **Backend** : Spring Boot, Spring Cloud (Gateway, Config Server, Eureka), Spring Data JPA, Open Feign.
-- **Base de données** : MySQL.
+- **Base de données** : H2 Database, Postgresql.
 - **Communication interservices** : REST API, Open Feign.
 - **Outils de développement** : IntelliJ IDEA, Maven.
 - **Gestion des configurations** : Spring Cloud Config Server.
