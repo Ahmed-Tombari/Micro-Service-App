@@ -1,5 +1,6 @@
 package com.microserviceapp.billingservice;
 
+
 import com.microserviceapp.billingservice.entities.Bill;
 import com.microserviceapp.billingservice.entities.ProductItem;
 import com.microserviceapp.billingservice.feign.CustomerRestClient;
@@ -8,9 +9,6 @@ import com.microserviceapp.billingservice.model.Customer;
 import com.microserviceapp.billingservice.model.Product;
 import com.microserviceapp.billingservice.repository.BillRepository;
 import com.microserviceapp.billingservice.repository.ProductItemRepository;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -24,7 +22,7 @@ import java.util.Random;
 
 @SpringBootApplication
 @EnableFeignClients
-public class  BillingServiceApplication {
+public class BillingServiceApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(BillingServiceApplication.class, args);
@@ -59,4 +57,3 @@ public class  BillingServiceApplication {
 	}
 
 }
-

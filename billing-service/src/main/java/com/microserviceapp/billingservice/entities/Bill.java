@@ -3,10 +3,11 @@ package com.microserviceapp.billingservice.entities;
 import com.microserviceapp.billingservice.model.Customer;
 import jakarta.persistence.*;
 import lombok.*;
+
+
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-
 @Entity
 @NoArgsConstructor @AllArgsConstructor @Getter @Setter @Builder
 public class Bill {

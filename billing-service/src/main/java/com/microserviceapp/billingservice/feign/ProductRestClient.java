@@ -1,5 +1,6 @@
 package com.microserviceapp.billingservice.feign;
 
+
 import com.microserviceapp.billingservice.model.Product;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.hateoas.PagedModel;
@@ -13,4 +14,3 @@ public interface ProductRestClient {
     @GetMapping("/api/products")
     PagedModel<Product> getAllProducts();
 }
-

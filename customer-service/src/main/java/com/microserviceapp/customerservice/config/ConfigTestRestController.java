@@ -11,7 +11,7 @@ import java.util.Map;
 @RestController
 @RefreshScope
 public class ConfigTestRestController {
-    /*@Value("${global.params.p1}")
+    @Value("${global.params.p1}")
     private String p1;
     @Value("${global.params.p2}")
     private String p2;
@@ -25,6 +25,6 @@ public class ConfigTestRestController {
     @GetMapping("/testConfig2")
     public CustomerConfigParams configTest2(){
         return customerConfigParams;
-    }*/
+    }
 }
 

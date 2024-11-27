@@ -1,11 +1,10 @@
 package com.microserviceapp.billingservice.web;
 
-
-import com.microserviceapp.billingservice.entities.Bill;
-import com.microserviceapp.billingservice.feign.CustomerRestClient;
-import com.microserviceapp.billingservice.feign.ProductRestClient;
-import com.microserviceapp.billingservice.repository.BillRepository;
-import com.microserviceapp.billingservice.repository.ProductItemRepository;
+import net.youssfi.billingservice.entities.Bill;
+import net.youssfi.billingservice.feign.CustomerRestClient;
+import net.youssfi.billingservice.feign.ProductRestClient;
+import net.youssfi.billingservice.repository.BillRepository;
+import net.youssfi.billingservice.repository.ProductItemRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
